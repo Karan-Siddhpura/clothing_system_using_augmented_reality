@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@500&display=swap');
+/* .home-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+} */
+
+.home-category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ 
+.men{
+    position: relative;
+    cursor: pointer;
+}
+
+.women{
+
+    position: relative;
+    cursor: pointer;
+}
+
+.men:hover{
+    opacity: 0.9;
+    filter: drop-shadow(8px 8px 10px black);
+}
+.women:hover{
+    opacity: 0.9;
+    filter: drop-shadow(8px 8px 10px black);
+}
+
+.dashed-line{
+    position: absolute;
+    width: 570px;
+    height: 370px;
+    top: 23.5px;
+    left: 30px;
+    border: solid white 2px;
+    border-style: dashed;
+}
+.home-category-title-m{
+    position: absolute;
+    bottom: 70px;
+    left: 170px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #EBEBEB;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.home-category-title-f{
+    position: absolute;
+    bottom: 70px;
+    left: 130px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #EBEBEB;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.men > img{
+    height: 420px;
+}
+
+.women > img{
+    height: 420px;
+}
+
+.f-prooduct-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #AAB7C3;
+    text-align: center;
+    padding: 10px;
+}
+
+.f-line{
+    margin-left: 35%;
+    height: 2px;
+    width: 30%;
+    background-color: black;
+    align-items: center;
+}
+
+.featured-product{
+    width: 100%; 
+    margin-top: 10px;  
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-bottom: 10px;
+}
+
+.latest-product{
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.customer-testimonial{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.customer-testimonial > h1{
+    padding-top: 30px;
+}
+
+.contant{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contant > p{
+    font-size: 20px;
+}
+.contant > img{
+    width: 100%;
+    height: 200px;
+}
+.home-quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height: 350px;
+    margin-top: 40px;
+}
+.home-quote-left{
+    width: 50%;
+    height: 100%;
+}
+.home-quote-left > img{
+    padding-left: 42px;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
+.home-quote-right{
+    padding: 30px;
+    width: 60%;
+    height: 100%;
+    background-color: #886F6F;
+    margin-left: 50px;
+    margin-right: -90px;
+}
+.home-p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #fff;
+}
+.home-quote-left-c{
+    padding: 30px;
+    width: 70%;
+    height: 100%;
+    background-color: #21325E;
+    margin-left: 50px;
+}
+.home-quote-right-c{
+    width: 50%;
+    height: 100%;
+}
+.home-quote-right-c > img{
+    padding-left: 42px;
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .dashed-line{
+        display: none;
+    }
+    .contant{
+        flex-wrap: wrap;
+    }
+    .contant > img{
+         width: 100px;
+         height: 100px;
+    }
+    
+  }
+  @media only screen and (max-width: 800px) {
+    .home-quote{
+       display: none;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    .woman > img{
+        width: 250px;
+        height: 200px;
+        margin: 30px;
+        border-radius: 5px;
+    }
+    
+    .man > img{
+        width: 250px;
+        height: 200px;
+        margin: 30px;
+        border-radius: 5px;
+    }
+    .flex-div{
+        flex-wrap: wrap;
+    }
+    .home-category{
+        flex-wrap: wrap;
+     }
+     .dashed-line{
+        display: none;
+    }
+    
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .home-category{
+      flex-wrap: wrap;
+    }
+    .flex-div{
+        flex-wrap: wrap;
+    }
+    .dashed-line{
+        display: none;
+    }
+  }

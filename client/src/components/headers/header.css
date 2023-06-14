@@ -1,0 +1,55 @@
+
+.form-control {
+  width: 500px;
+  height:30px;
+}
+.navbar-brand{
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-link{
+  color: black !important;
+  font-size: 16px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.header-cart{
+  position: relative;
+  width: 30px;
+}
+.cart-number{
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 22px;
+  height: 20px;
+  right: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+.circle{
+  position: absolute;
+  top: 24px;
+  left: 90px;
+  width: 8px;
+  height: 8px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-control {
+      width: 450px;
+    }
+  }
+@media only screen and (max-width: 400px) {
+  .form-control {
+
+    width: 300px;
+  }
+}
