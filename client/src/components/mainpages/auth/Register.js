@@ -19,7 +19,7 @@ export default function Register() {
     const registerSubmit = async e => {
         e.preventDefault()
         try {
-            await axios.post('/user/register', { ...user })
+            await axios.post('https://tryouts.onrender.com/user/register', { ...user })
             localStorage.setItem('firstLogin', true)
             window.location.href = "/";
         } catch (err) {

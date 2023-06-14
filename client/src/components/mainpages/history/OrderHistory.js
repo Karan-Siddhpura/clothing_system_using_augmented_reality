@@ -16,12 +16,12 @@ function OrderHistory() {
         if (token) {
             const getHistory = async () => {
                 if (isAdmin) {
-                    const res = await axios.get('/api/payment', {
+                    const res = await axios.get('https://tryouts.onrender.com/api/payment', {
                         headers: { Authorization: token }
                     })
                     setHistory(res.data)
                 } else {
-                    const res = await axios.get('/user/history', {
+                    const res = await axios.get('https://tryouts.onrender.com/user/history', {
                         headers: { Authorization: token }
                     })
                     setHistory(res.data)

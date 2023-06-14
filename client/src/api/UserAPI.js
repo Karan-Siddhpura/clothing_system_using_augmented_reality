@@ -12,7 +12,7 @@ function UserAPI(token) {
         if (token) {
             const getUser = async () => {
                 try {
-                    const res = await axios.get('/user/infor', {
+                    const res = await axios.get('https://tryouts.onrender.com/user/infor', {
                         headers: { Authorization: token }
                     })
 
@@ -41,7 +41,7 @@ function UserAPI(token) {
         if (check) {
             setCart([...cart, { ...product, quantity: 1, size: '', small: 'Small', large: 'Large', medium: 'Medium' }])
 
-            await axios.patch('/user/addcart', { cart: [...cart, { ...product, quantity: 1, size: '' }] }, {
+            await axios.patch('https://tryouts.onrender.com/user/addcart', { cart: [...cart, { ...product, quantity: 1, size: '' }] }, {
                 headers: { Authorization: token }
             })
 

@@ -42,10 +42,10 @@ export default function Card() {
         console.log({ id, public_id })
         try {
             setLoading(true)
-            const destroyImg = axios.post('/api/destroy', { public_id }, {
+            const destroyImg = axios.post('https://tryouts.onrender.com/api/destroy', { public_id }, {
                 headers: { Authorization: token }
             })
-            const deleteProduct = axios.delete(`/api/products/${id}`, {
+            const deleteProduct = axios.delete(`https://tryouts.onrender.com/api/products/${id}`, {
                 headers: { Authorization: token }
             })
             await destroyImg

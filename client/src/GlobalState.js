@@ -11,21 +11,21 @@ export const DataProvider = ({ children }) => {
     const [token, setToken] = useState(false)
     ProductsAPI()
 
-    
+
 
     useEffect(() => {
         const firstLogin = localStorage.getItem('firstLogin')
-        if( firstLogin){
+        if (firstLogin) {
             const refreshToken = async () => {
-                const res = await axios.get('./user/refresh_token')
+                const res = await axios.get('https://tryouts.onrender.com/user/refresh_token')
                 setToken(res.data.accesstoken)
-                setTimeout(()=>{
+                setTimeout(() => {
                     refreshToken()
-                },10*60*1000)
+                }, 10 * 60 * 1000)
             }
             refreshToken()
         }
-        
+
     }, [])
 
     const state = {

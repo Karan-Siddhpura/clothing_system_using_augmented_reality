@@ -15,7 +15,7 @@ export default function Header() {
 
 
   const logoutRouter = async () => {
-    await axios.get('/user/logout')
+    await axios.get('https://tryouts.onrender.com/user/logout')
     localStorage.removeItem('firstLogin')
     window.location.href = "/";
   }
